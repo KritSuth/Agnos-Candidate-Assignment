@@ -16,15 +16,17 @@ app.prepare().then(() => {
   io.on("connection", (socket) => {
     console.log("Client connected", socket.id);
 
-    socket.on("patient-update", (data) => { socket.broadcast.emit("patient-update", data);
-});
+    socket.on("patient-update", (data) => {
+      socket.broadcast.emit("patient-update", data);
+    });
+
     socket.on("patient-submit", (data) => io.emit("patient-submit", data));
 
     socket.on("disconnect", () => console.log("Client disconnected"));
   });
 
-  // Serve Next.js
-  server.all("*", (req, res) => handle(req, res));
+  // Serve Next.js - สำหรับ Express 5 ต้องใช้ regex
+  server.all(/.*/, (req, res) => handle(req, res));
 
   const port = process.env.PORT || 3000;
   httpServer.listen(port, () => console.log(`Server running on port ${port}`));
