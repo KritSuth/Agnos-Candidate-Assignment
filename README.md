@@ -4,7 +4,7 @@
 ---
 
 ## Deployed Application
-* **Live Demo:** [ใส่ลิงก์ Heroku ของคุณที่นี่]
+* **Live Demo:** [https://agnos-candidate-krit-5538490f62f8.herokuapp.com/]
 * **Tech Stack:** Next.js, TailwindCSS, Socket.io, Node.js
 
 ---
@@ -33,8 +33,8 @@
     ```
 
 ### Accessing the Interfaces
-* **Patient Form Interface:** `http://localhost:3000/patient`
-* **Staff Monitor Interface:** `http://localhost:3000/staff`
+* **Patient Form Interface:** `https://agnos-candidate-krit-5538490f62f8.herokuapp.com/patient`
+* **Staff Monitor Interface:** `https://agnos-candidate-krit-5538490f62f8.herokuapp.com/staff`
 
 ---
 
