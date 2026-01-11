@@ -19,7 +19,7 @@
 ### Installation & Local Development
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
+    git clone https://github.com/KritSuth/Agnos-Candidate-Assignment.git
     cd agnos-assignment
     ```
 
